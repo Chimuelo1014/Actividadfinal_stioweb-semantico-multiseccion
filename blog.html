@@ -8,32 +8,58 @@ Cuerpo del texto,
 Pie de artículo (<footer> dentro del <article>). -->
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
-</head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>blog</title>
+    </head>
     <body>
         <header>
-
+            <h1>Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#blog1">AzureDevops</a></li>
+                    <li><a href="#blog2">AFaffa</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
             <section>
-                <article>
-
+                <article id="blog1">
+                    <h2>¿Cómo crear un plan de pruebas en Azure DevOps?</h2>
+                    <address>
+                        Autor: Juan Pérez <br>
+                        Dirección: Calle Falsa 123, Medellín, Colombia <br>
+                        Correo electrónico: juan.perez@example.com
+                    </address>
+                    <time datetime="2022-01-04">4 de Enero de 2022</time>
+                    
+                    <p width="5000px">Inicie sesión en el proyecto de Azure DevOps y seleccione Planes de prueba de planes> de prueba. Seleccione + Nuevo plan de prueba. Escriba un nombre para el plan de prueba, compruebe que la ruta de acceso del área y la iteración se han establecido correctamente y, a continuación, seleccione Crear</p>
+                    
+                    <footer>Referencias: https://dev.azure.com/riwi-cohorte-4/_msalsignout?ru=https%3A%2F%2Fdev.azure.com%2Friwi-cohorte-4%2FLinus%2F_sprints%2Ftaskboard%2FCelula%25204%2520Godoy.s%2520crew%2FLinus%2FSprint%2520HTML%2520y%2520CSS</footer>
                 </article>
             
-                <article>
+                <article id="blog2">
+                    <h2>¿Cómo crear un plan de pruebas en Azure DevOps?</h2>
+                    <address>
+                        Autor: Juan Pérez <br>
+                        Dirección: Calle Falsa 123, Medellín, Colombia <br>
+                        Correo electrónico: juan.perez@example.com
+                    </address>
+                    <time datetime="2022-01-04">4 de Enero de 2022</time>
                     
+                    <p width="5000px">Inicie sesión en el proyecto de Azure DevOps y seleccione Planes de prueba de planes> de prueba. Seleccione + Nuevo plan de prueba. Escriba un nombre para el plan de prueba, compruebe que la ruta de acceso del área y la iteración se han establecido correctamente y, a continuación, seleccione Crear</p>
+                    
+                    <footer>Referencias: https://dev.azure.com/riwi-cohorte-4/_msalsignout?ru=https%3A%2F%2Fdev.azure.com%2Friwi-cohorte-4%2FLinus%2F_sprints%2Ftaskboard%2FCelula%25204%2520Godoy.s%2520crew%2FLinus%2FSprint%2520HTML%2520y%2520CSS</footer>
                 </article>
             </section>
         </main>
 
         <footer>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-    </footer>
-    
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </footer>
+        
     </body>
 </html>
