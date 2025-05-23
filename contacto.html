@@ -6,14 +6,61 @@ Asunto
 Mensaje
 Usa etiquetas semánticas (<form>, <fieldset>, <label>, <input>, <textarea>, etc.).
 Incluye texto de ayuda con <small> y ejemplos de formato con <abbr> si aplica. -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+    </head>
+        <body>
+            <header>
+               <h1>Contactanos</h1> 
+            </header>
     
-</body>
-</html>
+            <main>
+                <form action="/send" method="post">
+                    <fieldset>
+                        <legend>Informacion de contacto</legend>
+                        <small>Complete todos los campos con la informacion</small>
+                        <div>
+                            <label>Nombre:
+                            <input type="text" name="name" placeholder="Samuel Quintero" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>Email:
+
+                            <input type="email" name="email" required><br>
+                            <small>Recuerde ingresar una direccion de email valida<abbr title="Recuerde ingresar una direccion de email valida"><br>Ejemplo: santiago123@gmail.com</abbr></small>
+                            </label>
+                        </div>
+    
+                        <div>
+                            <label>Asunto:
+                            <input type="text" name="name" required>
+                            </label>
+                        </div>
+    
+                        
+                        <div>
+                           
+                            <label>Mensaje:
+                            <input type="text" name="name" rows="4" required>
+                            </label>
+                        </div>
+                        
+                    </fieldset>
+                    <input type="submit" value="Send">
+    
+    
+                
+    
+                </form>
+            </main>
+    
+            <footer>
+    
+            </footer>
+        </body>
+    </html>
