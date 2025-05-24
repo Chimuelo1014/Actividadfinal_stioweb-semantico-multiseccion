@@ -1,16 +1,10 @@
-<!-- 6. etiquetas.html – Explicación semántica
-Explica al menos 5 etiquetas semánticas diferentes (<article>, <section>, <nav>, etc.).
-Cada explicación debe incluir:
-Una descripción en texto,
-Un ejemplo real con la etiqueta mostrada usando <code> y <pre>,
-Una sección por cada etiqueta. -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etiquetas</title>
+    </head>
     <body>
         <header>
             <nav>
@@ -19,108 +13,103 @@ Una sección por cada etiqueta. -->
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="etiquetas.html">Etiquetas</a></li>
                     <li><a href="sobre_mi.html">Sobre mi</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
-                    
                 </ul>
             </nav>
             <h1>Etiquetas</h1>
-            
 
             <nav> 
                 <ul>
-                    <li><a href="#strong">Strong</a></li>
-                    <li><a href="#strong">Strong</a></li>
-                    <li><a href="#strong">Strong</a></li>
-                    <li><a href="#strong">Strong</a></li>
-                    <li><a href="#strong">Strong</a></li>
+                    <li><a href="#header">Header</a></li>
+                    <li><a href="#nav">Nav</a></li>
+                    <li><a href="#section">Section</a></li>
+                    <li><a href="#article">Article</a></li>
+                    <li><a href="#footer">Footer</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            
-            <section>
+
+            <section id="header">
                 <article>
-                    <h2>Strong</h2>
-                    <h3>Descripcion</h3>
-                    <p>descripcion va aqui</p>
-                    <h4>Ejemplo: </h4>
-                    <p>El siguiente código imprime "Hola, mundo!":</p>
-                    <p><code>System.out.println("Hola, mundo!");</code></p>
+                    <h2>Header</h2>
+                    <h3>Descripción</h3>
+                    <p>La etiqueta <code>&lt;header&gt;</code> define un encabezado para un documento o sección. Suele contener logotipos, menús o títulos.</p>
+                    <h4>Ejemplo:</h4>
+                    <pre><code>
+    &lt;header&gt;
+        &lt;h1&gt;Bienvenidos&lt;/h1&gt;
+    &lt;/header&gt;
+                    </code></pre>
                 </article>
             </section>
 
-
-            <section>
+            <section id="nav">
                 <article>
-                    <h2>Pre</h2>
-                    <h3>Descripcion</h3>
-                    <p>descripcion va aqui</p>
-                    <h4>Ejemplo: </h4>
-                    <pre>
-                        Este es un ejemplo de texto
-                        preformateado.
-                        Observe que los espacios y
-                        saltos de línea se conservan.
-                    </pre>
+                    <h2>Nav</h2>
+                    <h3>Descripción</h3>
+                    <p>La etiqueta <code>&lt;nav&gt;</code> se usa para contener enlaces de navegación dentro de la página.</p>
+                    <h4>Ejemplo:</h4>
+                    <pre><code>
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+                    </code></pre>
                 </article>
             </section>
 
-
-
-            <section>
+            <section id="section">
                 <article>
-                    <h2>Strong</h2>
-                    <h3>Descripcion</h3>
-                    <p>descripcion va aqui</p>
-                    <h4>Ejemplo: </h4>
-                    <p>El siguiente código imprime "Hola, mundo!":</p>
-                    <p><code>System.out.println("Hola, mundo!");</code></p>
+                    <h2>Section</h2>
+                    <h3>Descripción</h3>
+                    <p>La etiqueta <code>&lt;section&gt;</code> representa una sección temática dentro de un documento, como capítulos, pestañas o bloques separados.</p>
+                    <h4>Ejemplo:</h4>
+                    <pre><code>
+    &lt;section&gt;
+        &lt;h2&gt;Servicios&lt;/h2&gt;
+        &lt;p&gt;Ofrecemos desarrollo web y diseño UX.&lt;/p&gt;
+    &lt;/section&gt;
+                    </code></pre>
                 </article>
             </section>
 
-
-
-            <section>
+            <section id="article">
                 <article>
-                    <h2>Strong</h2>
-                    <h3>Descripcion</h3>
-                    <p>descripcion va aqui</p>
-                    <h4>Ejemplo: </h4>
-                    <p>El siguiente código imprime "Hola, mundo!":</p>
-                    <p><code>System.out.println("Hola, mundo!");</code></p>
+                    <h2>Article</h2>
+                    <h3>Descripción</h3>
+                    <p>La etiqueta <code>&lt;article&gt;</code> se usa para contenido independiente y auto-contenido como entradas de blog, noticias o publicaciones.</p>
+                    <h4>Ejemplo:</h4>
+                    <pre><code>
+    &lt;article&gt;
+        &lt;h2&gt;Nuevo lanzamiento&lt;/h2&gt;
+        &lt;p&gt;Hoy lanzamos nuestro nuevo producto...&lt;/p&gt;
+    &lt;/article&gt;
+                    </code></pre>
                 </article>
             </section>
 
-
-
-            <section>
+            <section id="footer">
                 <article>
-                    <h2>Strong</h2>
-                    <h3>Descripcion</h3>
-                    <p>descripcion va aqui</p>
-                    <h4>Ejemplo: </h4>
-                    <p>El siguiente código imprime "Hola, mundo!":</p>
-                    <p><code>System.out.println("Hola, mundo!");</code></p>
+                    <h2>Footer</h2>
+                    <h3>Descripción</h3>
+                    <p>La etiqueta <code>&lt;footer&gt;</code> define el pie de página de una sección o documento. Puede incluir información de contacto o derechos de autor.</p>
+                    <h4>Ejemplo:</h4>
+                    <pre><code>
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 Mi Sitio Web&lt;/p&gt;
+    &lt;/footer&gt;
+                    </code></pre>
                 </article>
             </section>
 
-
-
-
-            
         </main>
 
         <footer>
-            <small>copy</small>
-            <pre>
-                Este es un ejemplo de texto
-                preformateado.
-                Observe que los espacios y
-                saltos de línea se conservan.
-            </pre>
+            <small>&copy; 2025 Sitio Semántico</small>
         </footer>
     </body>
 </html>
